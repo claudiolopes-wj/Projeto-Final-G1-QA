@@ -17,7 +17,7 @@ at_exit do
     config.json_path = 'data/Reports/report.json'
     config.report_path = 'data/Reports/Relatorio'
     config.report_types = [:html]
-    config.report_title = 'Relatório Wine'
+    config.report_title = 'Relatório Moda'
     config.include_images = true
     config.compress_images = false
     config.color = 'indigo'
