@@ -59,3 +59,5 @@ Para obter detalhes sobre o nosso código de conduta e o processo para nos envia
 * Convide alguém da equipe para uma cerveja 🍺 ou café ☕ 
 * Obrigado publicamente 🤓.
 * etc.
+=======
+# Projeto-Final-G1-QA
