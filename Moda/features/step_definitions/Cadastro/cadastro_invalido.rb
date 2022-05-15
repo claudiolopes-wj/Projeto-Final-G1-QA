@@ -5,6 +5,6 @@ Dado("preencho todos os campos {string},{string}, {string}, {string} e {string}"
     createAccount.Fill(nome, sobrenome, email, senha, senhaConfirm, false)
 end
 
-Entao("irei visualizar uma mensagem de erro {string}") do |mensagem|
-    createAccount.Assert(mensagem)
+Entao("irei visualizar uma mensagem de erro {string}, {string}") do |mensagemPT, mensagemEN|
+    createAccount.Assert(mensagemPT, mensagemEN)
 end

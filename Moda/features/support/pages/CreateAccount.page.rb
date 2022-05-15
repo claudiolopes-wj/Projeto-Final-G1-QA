@@ -32,7 +32,7 @@ class CreateAccountPage
 
     def Assert(messagePT, messageEN)
 
-        isPortuguese  = has_content?('lang="pt"')
+        isPortuguese  = has_content?('Primeiro nome')
 
         if isPortuguese
             message = messagePT

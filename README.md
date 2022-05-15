@@ -1,3 +1,4 @@
+
 # Loja Moda & Wine
 
 Projeto responsável por realizar os testes automatizados para as lojas Wine e Moda.
