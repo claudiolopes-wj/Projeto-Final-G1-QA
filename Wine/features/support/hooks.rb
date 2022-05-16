@@ -1,6 +1,11 @@
 require "cucumber/rake/task"
 require 'erb'
 
+Before do
+  Capybara.current_session.driver.browser.manage.delete_all_cookies
+  page.driver.browser.manage.window.resize_to(1920, 1080)
+end
+
 After do |scenario|
     Dir.mkdir('data') unless Dir.exist?('data')
     Dir.mkdir('data/Reports') unless Dir.exist?('data/Reports')
