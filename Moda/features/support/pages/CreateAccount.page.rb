@@ -6,12 +6,12 @@ class CreateAccountPage
         visit('customer/account/create/')
     end
 
-    def Fill(name, lastname, email, password, passwordConfirmation, isNewEmail )
+    def Fill(name, lastname, email, password, passwordConfirmation)
         
         newEmail = email
 
-        if isNewEmail
-            newEmail = email + rand(100).to_s + '.com'            
+        if email.eql? "email"
+            newEmail = Faker::Internet.email       
         end
         
         using_wait_time 10 do
@@ -21,7 +21,7 @@ class CreateAccountPage
             find('input[name="password"]').set(password)
             find('input[name="password_confirmation"]').set(passwordConfirmation)
         end
-        
+            
     end
 
     def Click()
@@ -34,11 +34,7 @@ class CreateAccountPage
 
         isPortuguese  = has_content?('Primeiro nome')
 
-        if isPortuguese
-            message = messagePT
-        else
-            message = messageEN
-        end
+        message = isPortuguese ? messagePT : messageEN
 
         assert_text(message, wait: 5)
     end
