@@ -12,7 +12,7 @@ Funcionalidade: Efetuar o cadastro
         Dado que eu esteja na pagina de cadastro 
         E preencho todos os campos "nome","sobrenome", "email", "senha123@" e "senha123@"
         Quando eu clicar em criar conta
-        Entao irei visualizar uma mensagem "Obrigado por registrar-se com Main Website Store.",  "Thank you for registering with Main Website Store."
+        Entao irei visualizar uma mensagem "Obrigado por registrar-se com Main ModaStore.",  "Thank you for registering with Main ModaStore."
 
     @CadastroInvalido
     Cenario: Cadastro Invalido
