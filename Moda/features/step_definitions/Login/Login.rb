@@ -5,7 +5,7 @@ Dado("que eu esteja na tela de login") do
 end
   
 Dado("preencho meu email {string} e senha {string}") do |email, senha|
-    login.Fill(email,senha)
+    login.FillFields(email,senha)
 end
 
 Quando("eu clicar em entrar") do

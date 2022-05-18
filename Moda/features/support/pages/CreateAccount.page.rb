@@ -1,7 +1,7 @@
-include Capybara::DSL
 
 class CreateAccountPage
-    
+    include Capybara::DSL
+
     def AccessRegistration
         visit('customer/account/create/')
     end
