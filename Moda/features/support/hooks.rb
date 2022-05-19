@@ -1,6 +1,14 @@
 require "cucumber/rake/task"
 require 'erb'
 
+Before do
+
+    @login = LoginPage.new
+
+    Capybara.current_session.driver.browser.manage.delete_all_cookies
+    page.driver.browser.manage.window.resize_to(1320, 980)
+end
+
 After do |scenario|
     sufix = ("error" if scenario.failed?) || "success"
     name = scenario.name.tr(" ", "_").downcase
@@ -17,7 +25,7 @@ at_exit do
     config.json_path = 'data/Reports/report.json'
     config.report_path = 'data/Reports/Relatorio'
     config.report_types = [:html]
-    config.report_title = 'Relatório Wine'
+    config.report_title = 'Relatório Moda'
     config.include_images = true
     config.compress_images = false
     config.color = 'indigo'

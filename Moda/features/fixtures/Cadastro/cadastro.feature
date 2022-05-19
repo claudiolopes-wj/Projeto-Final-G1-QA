@@ -1,18 +1,32 @@
 #language: pt
 
-@ValidarCamposAlertas
-Funcionalidade: Validar os campos obrigatorios e alertas de erros 
+@Cadastro
+Funcionalidade: Efetuar o cadastro
 
-    Eu como Analista de qualidade
-    Quero validar todos os campos obrigatorios e alertas de erros
-    Para verificar se a pagina está mostrando alguma mensagem de aviso
+    Eu como usuario
+    Quero poder criar a minha conta no site
+    Para poder realizar uma compra
 
+    @CadastroSucesso
+    Cenario: Cadastro com Sucesso
+        Dado que eu esteja na pagina de cadastro 
+        E preencho todos os campos "nome","sobrenome", "email", "senha123@" e "senha123@"
+        Quando eu clicar em criar conta
+        Entao irei visualizar uma mensagem "Obrigado por registrar-se com Main",  "Thank you for registering with Main"
 
+    @CadastroInvalido
+    Cenario: Cadastro Invalido
+        Dado que eu esteja na pagina de cadastro
+        E preencho todos os campos "Charlotte","Brewer", "roni_cost@example.com", "senha1234@" e "senha1234@"
+        Quando eu clicar em criar conta
+        Entao irei visualizar uma mensagem "Já existe uma conta com este endereço de e-mail.", "There is already an account with this email address." 
+
+    @CadastroValidar
     Esquema do Cenario: Validar campos e alertas
-    Dado que eu esteja na tela de cadastro
-    E preencho os campos "<nome>", "<sobrenome>","<email>","<senha>" e "<senhaconfirm>"
-    Quando eu clicar no botao criar conta
-    Entao irei visualizar a "<mensagemPT>", "<mensagemEN>" de erro 
+        Dado que eu esteja na pagina de cadastro
+        E preencho todos os campos "<nome>","<sobrenome>", "<email>", "<senha>" e "<senhaconfirm>" 
+        Quando eu clicar em criar conta
+        Entao irei visualizar uma mensagem "<mensagemPT>", "<mensagemEN>" 
 
     Exemplos:
     |nome    |sobrenome   |email                |senha       |senhaconfirm |mensagemPT                |mensagemEN |
