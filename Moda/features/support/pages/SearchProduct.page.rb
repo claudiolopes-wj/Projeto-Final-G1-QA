@@ -1,4 +1,3 @@
-
 class SearchProductPage < Methods
 
     include Capybara::DSL

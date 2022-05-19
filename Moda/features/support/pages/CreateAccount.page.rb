@@ -1,6 +1,7 @@
 
 class CreateAccountPage < Methods
-    
+   
+class CreateAccountPage
     include Capybara::DSL
 
     def AccessRegistration

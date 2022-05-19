@@ -1,5 +1,4 @@
 
-
 class LoginPage < Methods
 
     include Capybara::DSL
