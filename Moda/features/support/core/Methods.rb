@@ -1,44 +1,37 @@
-include Capybara::DSL
-include RSpec::Matchers
-
 class Methods
 
-    #Método para buscar um determinado elemento e inserir um valor
-    begin
-        def Fill(element, value)
-            find(element).set(value)
-        end
+    include Capybara::DSL
+    include RSpec::Matchers
 
+    #Método para buscar um determinado elemento e inserir um valor
+    def Fill(element, value)
+        find(element).set(value)
     rescue SomeExceptionClass => error
         raise "Elemento: #{element} não encontrado, #{error}"
     end
 
     #Método para validar um determinado css
-    begin
-        def ValidateCss(element)
-            expect(page).to have_css(element, visible: true)
-        end
+    def ValidateCss(element)
+        expect(page).to have_css(element, visible: true)
+    rescue SomeExceptionClass => error
+        raise "Elemento: #{element} não encontrado, #{error}"
     end
 
     #Método para validar a mensagem em Português e em Inglês
-    begin
-        def ValidateMessage(elementLanguage, messagePT, messageEN)
-            isPortuguese  = has_content?(elementLanguage)
+    def ValidateMessage(elementLanguage, messagePT, messageEN)
+        isPortuguese  = has_content?(elementLanguage)
             
-            message =  isPortuguese ? messagePT : messageEN
+        message =  isPortuguese ? messagePT : messageEN
             
-            assert_text(message, wait: 5)
-        end
-
-        rescue SomeExceptionClass => error
-            raise "Ops, #{error}"
+        assert_text(message, wait: 5)
+    rescue SomeExceptionClass => error
+        raise "Ops, #{error}"
     end
 
-    #Método para realizar um enter em determinado campo
-    begin
-        def Enter(element)
-            find(element).native.send_keys(:return)
-        end
+    def ClickButtonByClass(element)
+            find_button(class:element).click()
+    rescue SomeExceptionClass => error
+        raise "Ops, #{error}"
     end
 
 end
