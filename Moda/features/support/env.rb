@@ -3,7 +3,9 @@ require 'capybara/cucumber'
 require 'report_builder'
 require 'faker'
 require 'rspec'
-require 'yaml'
+
+
+EL = YAML.load_file('./data/enviroments/elements.yml')
 
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome
@@ -11,4 +13,3 @@ Capybara.configure do |config|
     config.app_host = "https://magento.nublue.co.uk/"
 end
 
-EL = YAML.load_file('./data/elm.yml')

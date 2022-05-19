@@ -1,6 +1,7 @@
-include Capybara::DSL
 
 class SearchProductPage < Methods
+
+    include Capybara::DSL
 
     def AcessHome()
         visit('/')
@@ -11,7 +12,7 @@ class SearchProductPage < Methods
     end
 
     def Search()
-        Enter(EL['campoDeBusca'])
+        find(EL['campoDeBusca']).native.send_keys(:return)
     end
 
     def AssertCss()

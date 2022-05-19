@@ -8,7 +8,7 @@ end
 
 Dado("preencho os campos email {string} e senha {string} e clico para entrar") do |email, senha|
   login.FillFields(email,senha)
-  login.Click()
+  login.ClickButton()
 end
 
 Dado("que eu esteja na pagina principal") do
@@ -22,7 +22,6 @@ end
 Quando("eu der enter para pesquisar") do
   searchProduct.Search()
 end
-
 
 Entao("irei visualizar o produto na pagina") do
   searchProduct.AssertCss()
