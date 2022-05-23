@@ -1,14 +1,14 @@
-include Capybara::DSL
+class Search < Methods
 
-class Search
+    include Capybara::DSL
 
     def SearchFill(name)
-        find('#search').set name
-        find('#search').native.send_keys(:return)
+        Fill(EL['campoDeBusca'], name)
+        find(EL['campoDeBusca']).native.send_keys(:return)
     end
 
     def ViewProduct
-        assert_text('Proteus Fitness Jackshirt')
+        ValidateMessage('Conte Lorenzo Sormani Trebbiano 2018')
     end
 
     def AccessHome

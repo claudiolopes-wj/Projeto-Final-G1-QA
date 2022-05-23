@@ -2,6 +2,11 @@ include Capybara::DSL
 
 class CreateAccount
 
+    def fill_form
+        fill_fields('emailRegister')
+        fill_fields('pass')
+    end
+
     def AccessCreateAccount
         visit('customer/account/create/')
     end 
