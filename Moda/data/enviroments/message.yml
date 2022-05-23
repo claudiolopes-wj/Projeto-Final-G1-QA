@@ -1,3 +1,8 @@
-#Mensagem Adicionar no Carrinho
+#Mensagem Adicionar no carrinho
 msgAddProductCartPT: "Você adicionou"
 msgAddProductCartEN: "You added"
+
+
+#Mensagem Remover do carrinho
+msgRemoveProductCartPT: "Você não possui nenhum item em seu carrinho de compras."
+msgRemoveProductCartEN: "You have no items in your shopping cart."
