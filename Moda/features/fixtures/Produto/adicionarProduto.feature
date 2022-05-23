@@ -32,7 +32,7 @@ Funcionalidade: Adicionar produtos no carrinho
         Quando eu selecionar o produto e adicionar no carrinho
         Entao irei visualizar uma mensagem
 
-    @AddTipoDeslogado
+    @AddTipoDeslogado   
     Cenario: Adicionar mais de um tipo de produto no carrinho deslogado
         Dado que eu esteja na pagina principal
         E busco pelo produto "Casaco Feminino" no campo de busca e seleciono o produto e adiciono no carrinho
