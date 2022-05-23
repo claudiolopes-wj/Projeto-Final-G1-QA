@@ -1,7 +1,6 @@
 
 class CreateAccountPage < Methods
-   
-class CreateAccountPage
+
     include Capybara::DSL
 
     def AccessRegistration
@@ -18,9 +17,6 @@ class CreateAccountPage
 
         Fill(EL['nameAccount'], name)
         Fill(EL['lastnameAccount'], lastname)
-        Fill(EL['lastnameAccount'], lastname)
-        Fill(EL['lastnameAccount'], lastname)
-        Fill(EL['emailAccount'], newEmail)
         Fill(EL['emailAccount'], newEmail)
         Fill(EL['passwordAccount'], password)
         Fill(EL['confirmPasswordAccount'], passwordConfirmation)

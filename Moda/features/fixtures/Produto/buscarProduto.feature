@@ -10,29 +10,29 @@ Funcionalidade: Realizar uma busca de produtos
     @BuscaValidaLog
     Cenario: Busca Valida Logado
         Dado que eu esteja na pagina de login
-        E preencho os campos email "roni_cost@example.com" e senha "roni_cost3@example.com" e clico para entrar
-        E busco pelo produto "Proteus Fitness Jackshirt" no campo de busca
+        E preencho os campos email "davidlima@webjump.com.br" e senha "w3bjump@29" e clico para entrar
+        E busco pelo produto "Casaco Feminino" no campo de busca
         Quando eu der enter para pesquisar 
         Entao irei visualizar o produto na pagina
 
     @BuscaValidaDes
     Cenario: Busca Valida Deslogado
         Dado que eu esteja na pagina principal
-        E busco pelo produto "Proteus Fitness Jackshirt" no campo de busca
+        E busco pelo produto "Casaco Feminino" no campo de busca
         Quando eu der enter para pesquisar
         Entao irei visualizar o produto na pagina
 
     @BuscaInvalidaLog
     Esquema do Cenario: Busca Invalida logado
         Dado que eu esteja na pagina de login
-        E preencho os campos email "roni_cost@example.com" e senha "roni_cost3@example.com" e clico para entrar
+        E preencho os campos email "davidlima@webjump.com.br" e senha "w3bjump@29" e clico para entrar
         E busco pelo produto "<nomeProduto>" no campo de busca
         Quando eu der enter para pesquisar 
         Entao irei visualizar uma mensagem: "<mensagemPT>", "<mensagemEN>"
 
     Exemplos: Dados 
     |nomeProduto  |mensagemPT                             |mensagemEN                       |
-    |asd          |A sua pesquisa não retornou resultados.|Did you mean                     |
+    |asd          |A sua pesquisa não retornou resultados.|Your search returned no results. |
     |masdkeee     |A sua pesquisa não retornou resultados.|Your search returned no results. |
 
 
@@ -45,5 +45,5 @@ Funcionalidade: Realizar uma busca de produtos
 
     Exemplos: Dados 
     |nomeProduto  |mensagemPT                             |mensagemEN                       |
-    |asd          |A sua pesquisa não retornou resultados.|Did you mean                     |
+    |asd          |A sua pesquisa não retornou resultados.|Your search returned no results. |
     |masdkeee     |A sua pesquisa não retornou resultados.|Your search returned no results. |

@@ -22,7 +22,6 @@ class Methods
         isPortuguese  = has_content?(elementLanguage)
             
         message =  isPortuguese ? messagePT : messageEN
-            
         assert_text(message, wait: 5)
     rescue SomeExceptionClass => error
         raise "Ops, #{error}"

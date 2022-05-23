@@ -10,14 +10,14 @@ Funcionalidade: Realizar o login
     @LoginSucesso
     Cenario: Login realizado com sucesso
         Dado que eu esteja na tela de login
-        E preencho meu email "roni_cost@example.com" e senha "roni_cost3@example.com"  
+        E preencho meu email "davidlima@webjump.com.br" e senha "w3bjump@29"  
         Quando eu clicar em entrar
         Entao irei visualizar uma mensagem "Minha Conta", "My Account"
 
     @LoginInvalido
     Cenario: Login invalido
         Dado que eu esteja na tela de login
-        E preencho meu email "roni_cost@example.com" e senha "abcde" 
+        E preencho meu email "davidlima@webjump.com.br" e senha "abcde" 
         Quando eu clicar em entrar
         Entao irei visualizar uma mensagem "O login da conta estava incorreto ou sua conta está desativada temporariamente.", "The account sign-in was incorrect or your account is disabled temporarily."
 
