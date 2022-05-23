@@ -38,3 +38,4 @@ Funcionalidade: Adicionar produto no carrinho
         E busco pelo produto "Faustino Rivero" no campo de busca e dou enter para pesquisar
         Quando eu clicar em adicionar no carrinho
         Entao irei visualizar uma mensagem "Você adicionou Conte Lorenzo Sormani Trebbiano 2018 para o seu carrinho de compras."
+        

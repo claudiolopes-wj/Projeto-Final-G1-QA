@@ -6,6 +6,7 @@ Before do
   @login = Login.new
   @busca = Search.new
   @addProduct = AddProductPage.new
+  @removeProductPage = RemoveProductPage.new
 
 
   Capybara.current_session.driver.browser.manage.delete_all_cookies
