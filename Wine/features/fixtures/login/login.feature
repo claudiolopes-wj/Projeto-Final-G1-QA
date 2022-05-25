@@ -6,7 +6,7 @@ Funcionalidade: realizar login
 @loginsucesso
     Cenario: Login com sucesso
     Dado que eu esteja na pagina de login
-    E preencho os campos "ruby@mailinator.com", "Alabama01"
+    E preencho os campos "comandante83@gmail.com", "Alabama01"
     Quando eu clicar em entrar
     Entao irei visualizar uma mensagem "Minha Conta"
 
