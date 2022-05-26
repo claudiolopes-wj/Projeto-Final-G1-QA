@@ -1,5 +1,5 @@
 
-class AddProductPage < Methods
+class AddProductCartPage < Methods
     
     include Capybara::DSL
 

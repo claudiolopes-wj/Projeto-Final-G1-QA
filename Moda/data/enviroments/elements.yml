@@ -6,10 +6,13 @@ emailAccount: "#email_address"
 passwordAccount: "input[name='password']"
 confirmPasswordAccount: "input[name='password_confirmation']"
 
-
 #Login
 emailLogin: "input[name='login[username]']"
 passwordLogin: "input[name='login[password]']"
 
 #Busca
 campoDeBusca: "#search"
+
+#Adicionar Favoritos
+TextLinkPT: "Adicionar à lista de desejos"
+TextLinkEN: "Add to Wish List"
