@@ -51,5 +51,11 @@ class Methods
         raise "Ops, #{error}"
     end
 
+    def SelectDropdown(valueToSelect)
+        find("option[value='#{valueToSelect}']").select_option
+    rescue SomeExceptionClass => error
+        raise "Ops, #{error}"
+    end
+
 end
 

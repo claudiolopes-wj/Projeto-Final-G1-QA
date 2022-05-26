@@ -15,4 +15,6 @@ msgAddProductFavoriteSuccessEN: "has been added to your Wish List. Click here to
 msgAddProductFavoriteErrorPT: "Você deve logar ou registrar-se para adicionar itens à sua lista de desejos."
 msgAddProductFavoriteErrorEN: "You must login or register to add items to your wishlist."
 
-
+#Mensagem de compra Realizada com Sucesso
+msgCompletedPurchasePT: "Obrigado por sua compra!"
+msgCompletedPurchaseEN: "Thank you for your purchase!"
