@@ -1,4 +1,6 @@
 class AddProductFavoritePage < Methods
+    
+    include Capybara::DSL
 
     def SelectProduct()
         SelectFirstProduct('.product-image-photo')

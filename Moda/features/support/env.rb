@@ -5,6 +5,8 @@ require 'faker'
 require 'rspec'
 require 'yaml'
 require 'pry'
+require 'securerandom'
+
 
 EL = YAML.load_file('./data/enviroments/elements.yml')
 MSG = YAML.load_file('./data/enviroments/message.yml')
