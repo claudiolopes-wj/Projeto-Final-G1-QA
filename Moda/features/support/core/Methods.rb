@@ -27,8 +27,26 @@ class Methods
         raise "Ops, #{error}"
     end
 
+    #Método responsável por Clicar em um botão pela classe
     def ClickButtonByClass(element)
             find_button(class:element).click()
+    rescue SomeExceptionClass => error
+        raise "Ops, #{error}"
+    end
+
+    #Método responsável por selecionar o primeiro produto da página
+    def SelectFirstProduct(element)
+        first(element).click()
+    rescue SomeExceptionClass => error
+        raise "Ops, #{error}"
+    end
+
+    #Método responsável por clicar em um link pelo texto
+    def ClickByTextLink(elementLanguage, textPT, textEN)
+        isPortuguese  = has_content?(elementLanguage)
+            
+        text =  isPortuguese ? textPT : textEN
+        find_link(text).hover().click()
     rescue SomeExceptionClass => error
         raise "Ops, #{error}"
     end

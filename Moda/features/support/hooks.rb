@@ -7,9 +7,10 @@ Before do
     @createAccount = CreateAccountPage.new 
     @login = LoginPage.new
     @searchProduct = SearchProductPage.new
-    @addProduct = AddProductPage.new
+    @addProductCart = AddProductCartPage.new
     @removeProduct = RemoveProductPage.new
-    
+    @AddProductFavorite = AddProductFavoritePage.new
+
     Capybara.current_session.driver.browser.manage.delete_all_cookies
     page.driver.browser.manage.window.resize_to(1320, 980)
 end
