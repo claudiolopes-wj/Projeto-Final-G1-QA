@@ -1,4 +1,3 @@
-
 #Login
 emailLogin: "input[name='login[username]']"
 senhaLogin: "input[name='login[password]']"

@@ -1,0 +1,20 @@
+#Mensagem Adicionar no carrinho
+msgAddProductCartPT: "Você adicionou"
+msgAddProductCartEN: "You added"
+
+
+#Mensagem Remover do carrinho
+msgRemoveProductCartPT: "Você não possui nenhum item em seu carrinho de compras."
+msgRemoveProductCartEN: "You have no items in your shopping cart."
+
+
+#Mensagem Adicionar no favoritos
+msgAddProductFavoriteSuccessPT: "foi adicionado à sua lista de desejos. Clique aqui para continuar comprando."
+msgAddProductFavoriteSuccessEN: "has been added to your Wish List. Click here to continue shopping."
+
+msgAddProductFavoriteErrorPT: "Você deve logar ou registrar-se para adicionar itens à sua lista de desejos."
+msgAddProductFavoriteErrorEN: "You must login or register to add items to your wishlist."
+
+#Mensagem de compra Realizada com Sucesso
+msgCompletedPurchasePT: "Obrigado por sua compra!"
+msgCompletedPurchaseEN: "Thank you for your purchase!"

@@ -6,10 +6,35 @@ emailAccount: "#email_address"
 passwordAccount: "input[name='password']"
 confirmPasswordAccount: "input[name='password_confirmation']"
 
-
 #Login
 emailLogin: "input[name='login[username]']"
 passwordLogin: "input[name='login[password]']"
 
 #Busca
 campoDeBusca: "#search"
+
+#Adicionar Favoritos
+TextLinkPT: "Adicionar à lista de desejos"
+TextLinkEN: "Add to Wish List"
+
+
+#Fluxo e2e
+CreateAccountPT: "Cadastre-se"
+CreateAccountEN: "Create an Account"
+
+MyCartPT: "Meu Carrinho"
+MyCartEN: "My Cart"
+
+
+#Formulário de Entrega
+AdressForm: "input[name='street[0]']"
+NumberForm: "input[name='street[1]']"
+DistrictForm: "input[name='street[2]']"
+ComplementForm: "input[name='street[3]']"
+CityForm: "input[name='city']"
+PostCodeForm: "input[name='postcode']"
+TelePhoneForm: "input[name='telephone']"
+
+#Método de pagamento
+Payment: "input[name='payment[method]']"
+

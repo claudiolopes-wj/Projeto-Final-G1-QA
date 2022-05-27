@@ -1,25 +1,21 @@
-include Capybara::DSL
+class Login < Methods
 
-class Login
-
+    include Capybara::DSL
+    
     def AccessLogin
         visit('customer/account/login/')
     end
 
     def FillFields(email, password)
-        find('input[name="login[username]"]').set(email)
-        find('input[name="login[password]"]').set(password)
+        Fill(EL['emailLogin'], email)
+        Fill(EL['senhaLogin'], password)
     end
 
     def ClickButton
-        find_button(class:'action login primary').click
+        ClickButtonByClass('action login primary')
     end
 
     def VerifyMessage(message)
-        assert_text(message, wait: 5)
+        ValidateMessage(message)
     end
-
-
-
-
 end

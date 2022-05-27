@@ -2,9 +2,18 @@ require "cucumber/rake/task"
 require 'erb'
 
 Before do
+
+  @login = Login.new
+  @busca = Search.new
+  @addProduct = AddProductPage.new
+  @removeProductPage = RemoveProductPage.new
+  @favorite = Favorite.new
+  @end = End.new
+
+
   Capybara.current_session.driver.browser.manage.delete_all_cookies
   page.driver.browser.manage.window.resize_to(1920, 1080)
-end
+  end
 
 After do |scenario|
     Dir.mkdir('data') unless Dir.exist?('data')
