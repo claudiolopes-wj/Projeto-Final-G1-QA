@@ -3,7 +3,7 @@ class EndToEndPage < Methods
     include Capybara::DSL
 
     def CreateAccount()
-        ClickByTextLink('Assinar', EL['CreateAccountPT'],EL['CreateAccountEN'])
+        ClickByTextLink('Promoções', EL['CreateAccountPT'],EL['CreateAccountEN'])
         password = SecureRandom.alphanumeric(20) + '0*'
         Fill(EL['nameAccount'], Faker::Name.first_name)
         Fill(EL['lastnameAccount'], Faker::Name.last_name)
@@ -15,7 +15,7 @@ class EndToEndPage < Methods
     
     def ToCheckout()
         #Indo para o checkout
-        ClickByTextLink('Assinar', EL['MyCartPT'],EL['MyCartEN'])
+        ClickByTextLink('Promoções', EL['MyCartPT'],EL['MyCartEN'])
         ClickButtonByClass('action primary checkout')
 
         #Preenchendo o formulário
@@ -37,7 +37,7 @@ class EndToEndPage < Methods
     end
 
     def AssertMessage()
-        ValidateMessage('Assinar', MSG['msgCompletedPurchasePT'], MSG['msgCompletedPurchaseEN'])
+        ValidateMessage('Promoções', MSG['msgCompletedPurchasePT'], MSG['msgCompletedPurchaseEN'])
     end
 
 end

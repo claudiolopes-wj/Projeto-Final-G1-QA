@@ -27,7 +27,7 @@ class CreateAccountPage < Methods
     end
 
     def AssertMessage(messagePT, messageEN)
-        ValidateMessage('Primeiro nome', messagePT, messageEN)
+        ValidateMessage('Promoções', messagePT, messageEN)
     end
 
 end
