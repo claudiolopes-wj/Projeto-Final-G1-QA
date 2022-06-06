@@ -46,7 +46,7 @@ class Methods
         isPortuguese  = has_content?(elementLanguage)
             
         text =  isPortuguese ? textPT : textEN
-        find_link(text).hover().click()
+        find_link(text).click()
     rescue SomeExceptionClass => error
         raise "Ops, #{error}"
     end

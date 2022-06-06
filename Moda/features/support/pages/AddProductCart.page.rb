@@ -5,6 +5,7 @@ class AddProductCartPage < Methods
 
     def SelecionarProduto()
         first(".product-image-photo").click()
+        first(".swatch-option").click()
         ClickButtonByClass("action primary tocart")
     end
 
